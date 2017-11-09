@@ -46,6 +46,7 @@ std::vector<float> Generator::WriteFile(){
 		//cout << data[x];
 	}
 	outfile.flush();
+	return data;
 }
 
 int main()
