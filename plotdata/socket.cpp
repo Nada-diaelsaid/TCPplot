@@ -45,12 +45,12 @@ void socket::readyRead()
         str.append(temp);
 
     }
-    QStringList fifi = str.split(',', QString::SkipEmptyParts);
-    for(int i=0; i<fifi.size();i=i+2){
-    x.append(fifi[i].toDouble() );
+    QStringList sl = str.split(',', QString::SkipEmptyParts);
+    for(int i=0; i<sl.size();i=i+2){
+    x.append(sl[i].toDouble() );
     }
-    for(int i=1;i<fifi.size();i=i+2){
-        y.append(fifi[i].toDouble() );
+    for(int i=1;i<sl.size();i=i+2){
+        y.append(sl[i].toDouble() );
 
     }
 //    qDebug() << y.size();
